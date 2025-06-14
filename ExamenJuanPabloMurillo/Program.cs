@@ -122,7 +122,7 @@ namespace ExamenJuanPabloMurillo
                         break;
                 }
             }
-            while (opcion != 5);
+            while (opcion != 4);
         }
 
         static void Main(string[] args)
