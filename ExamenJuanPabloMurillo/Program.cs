@@ -10,7 +10,7 @@ namespace ExamenJuanPabloMurillo
     {
         static string[] orden = new string[5];
         static string nombre = "";
-        static void MenuCafeteria() 
+        static void MenuCafeteria() //muestra el menu de la cafeteria
         {
             Console.WriteLine("Menu cafeteria:");
             Console.WriteLine("-Cafe mocca");
@@ -36,9 +36,9 @@ namespace ExamenJuanPabloMurillo
             
             MenuCafeteria();
             {
-                for (i = 0; i < 3; i++)
+                for (i = 0; i < orden.Lenght; i++)
                 {
-                    Console.WriteLine("Ingrese los items del menu (max 3)");
+                    Console.WriteLine("Ingrese los items del menu (max 5)");
                     orden[i] = Console.ReadLine();
                 }
                 Console.WriteLine("Orden registrada!");
@@ -63,7 +63,7 @@ namespace ExamenJuanPabloMurillo
             Console.WriteLine("Digite el nombre del item que desea borrar de la orden: ");
             objPorEliminar= Console.ReadLine();
             
-            for (i=0; i<orden.Length ; i++) 
+            for (i=0; i<orden.Length ; i++) //recorre el arreglo y valida si la entrada que se proceso es correcta o no 
             {
                 if (orden[i] == objPorEliminar)
                 {
